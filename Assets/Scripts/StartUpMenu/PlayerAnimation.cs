@@ -9,12 +9,13 @@ public class PlayerAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.SetBool("is_Running", true);
+        animator.speed = 0.5f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("is_Running", true);
-        animator.speed = 0.5f;
+        
     }
 }
